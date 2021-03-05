@@ -1,0 +1,5 @@
+t = input("enter the tuple elements: ")
+a = tuple(x for x in t.split(','))
+s = input("search index of : ")
+r = a.index(s)
+print(f"index [{s}] is {r}")

@@ -1,0 +1,6 @@
+is_num1 = lambda x: x.replace('.', '', 1).isdigit()
+print(is_num1('abc'))
+print("\nPrint checking numbers:")
+is_num2 = lambda r: is_num1(r[1:]) if r[0] == '-' else is_num1(r)
+print(is_num2('abc'))
+print(is_num2('-24587.11'))
